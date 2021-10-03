@@ -29,8 +29,8 @@ button .buttonSurcle {
   border: 1px solid #b1b1b1;
   -webkit-transform: translateX(-1px);
           transform: translateX(-1px);
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 .top {
@@ -127,6 +127,8 @@ button .buttonSurcle {
   height: 100vh;
   width: 100%;
   margin: 0;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 .color .buttonSurcle {
