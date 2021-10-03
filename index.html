@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body >
+
+  <div id="app">
+    <div :class="{ color: isActive}" >
+
+    <div class="top">
+      <div class="surcle">
+        <div class="miniSurcle" ></div>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <button @click="changeState">
+      <div class="buttonSurcle"></div>
+    </button>
+    <h1>標準体重の計算</h1>
+    <p>身長を入力してください</p>
+    <div class="inp">
+      <div>
+        <input  v-model="value" placeholder="154"><span>cm</span>
+      </div>
+      <div class="btn" @click="calc">計算</div>
+    </div>
+    <h2>あなたの標準体重は</h2>
+    <p class="result">{{change}}kg</p>
+  </div>
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

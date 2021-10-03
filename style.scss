@@ -1,0 +1,155 @@
+body {
+  text-align: center;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  letter-spacing: .2em;
+  padding-top: 10%;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  position: relative;
+  background-color:rgb(90, 139, 78);
+  padding: 8px;
+  width: 40px;
+  height: 20px;
+  color: #fff;
+  border-radius: 999px;
+
+  & .buttonSurcle {
+    position: absolute;
+    left: 0;
+    top: -1px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    border:1px solid rgb(177, 177, 177);
+    transform: translateX(-1px);
+    transition: 1s;
+  }
+}
+
+.top {
+  padding-top: 100px;
+}
+.miniSurcle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #333;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate(-10px, -10px);
+
+}
+
+.surcle {
+
+
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #333;
+  margin: 0 auto;
+
+  margin-bottom: 24px;
+  position: relative;
+
+  & span {
+    width: 10px;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    top: -5px;
+    left: 5px;
+    transform-origin: 10px 20px;
+    opacity: 1;
+    transition: 1s;
+    
+    @for $i from 1 to 10 {
+      &:nth-child(#{$i}){
+        transform: rotate(45deg * $i);
+      }
+    }
+  }
+}
+
+.color {
+  background-color: #333;
+  color:#fff;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+
+  & .buttonSurcle {
+    transform: translateX(20px);
+    transition: 1s;
+  }
+
+
+  & .surcle {
+    background-color: #fff;
+
+    & .miniSurcle {
+      opacity: 1; 
+       transition: 1s;
+       transform: translate(0);
+    }
+
+    & span {
+      opacity: 0;
+      transform: rotate(0deg);
+      background-color: #fff;
+    }
+  }
+
+ 
+}
+
+
+h1{
+  text-align: center;
+}
+
+p{
+  margin-bottom: 24px;
+}
+
+input {
+  width: 100px;
+  height: 24px;
+  padding: 4px;
+  font-size: 24px;
+  margin-right: 4px;
+}
+
+.btn {
+  height: 30px;
+  width: 100px;
+  background-color: rgb(73, 190, 136);
+  line-height: 30px;
+  border-radius: 16px;
+  
+}
+
+.inp {
+  display: flex;
+  width: 300px;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  
+}
+.result {
+  margin: 0;
+  width: 172px;
+  display: inline-block;
+  background-color: rgb(162, 211, 168);
+  padding: 64px;
+  border-radius: 16px;
+  font-size: 32px;
+}
