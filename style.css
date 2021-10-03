@@ -5,6 +5,8 @@ body {
   padding-top: 10%;
   margin: 0;
   padding: 0;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 button {
