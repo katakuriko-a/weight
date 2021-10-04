@@ -33,7 +33,7 @@
     <p>身長を入力してください</p>
     <div class="inp">
       <div>
-        <input  v-model="value" placeholder="154"><span>cm</span>
+        <input v-on:keyup.enter="calc"  v-model="value" placeholder="154"><span>cm</span>
       </div>
       <div class="btn" @click="calc">計算</div>
     </div>
